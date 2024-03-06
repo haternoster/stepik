@@ -1,4 +1,6 @@
-from selenium.common import NoSuchElementException
+
+
+from selenium.common import NoSuchElementException, NoAlertPresentException
 
 
 class BasePage():
@@ -16,3 +18,4 @@ class BasePage():
         except NoSuchElementException as exc:
             return False
         return True
+
